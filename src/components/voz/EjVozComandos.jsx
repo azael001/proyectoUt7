@@ -6,26 +6,163 @@ const VozOrdenes = () => {
   const [message, setMessage] = useState('')
   const commands = [
     {
-      command: 'Me gustaría pedir *',
-      callback: (food) => setMessage(`Tu pedido es de: ${food}`)
+      command: 'cero',
+      callback: (cero)
     },
     {
-      command: 'El tiempo está :condition hoy',
-      callback: (condition) => setMessage(`Hoy el tiempo está ${condition}`)
+      command: 'uno',
+      callback: (uno)
     },
     {
-      command: 'Mis deportes favoritos son * y *',
-      callback: (sport1, sport2) => setMessage(`#1: ${sport1}, #2: ${sport2}`)
+      command: 'dos',
+      callback: (dos)
     },
     {
-      command: 'Pásame la sal (por favor)',
-      callback: () => setMessage('Aquí tienes')
+      command: 'tres',
+      callback: (tres)
     },
     {
-      command: ['Hola', 'Holitas'],
-      callback: ({ command }) => setMessage(`Hola. Dijiste: "${command}"`),
-      matchInterim: true
+      command: 'cuatro',
+      callback: (cuatro)
     },
+    {
+      command: 'cinco',
+      callback: (cinco)
+    },
+    {
+      command: 'seis',
+      callback: (seis)
+    },
+    {
+      command: 'siete',
+      callback: (siete)
+    },
+    {
+      command: 'ocho',
+      callback: (ocho)
+    },
+    {
+      command: 'nueve',
+      callback: (nueve)
+    },
+    {
+      command: 'diez',
+      callback: (diez)
+    },
+    {
+      command: 'once',
+      callback: (once)
+    },
+    {
+      command: 'doce',
+      callback: (doce)
+    },
+    {
+      command: 'trece',
+      callback: (trece)
+    },
+    {
+      command: 'catorce',
+      callback: (catorce)
+    },
+    {
+      command: 'quince',
+      callback: (quince)
+    },
+    {
+      command: 'dieciseis',
+      callback: (dieciseis)
+    },
+    {
+      command: 'diecisiete',
+      callback: (diecisiete)
+    },
+    {
+      command: 'dieciocho',
+      callback: (dieciocho)
+    },
+    {
+      command: 'diecinueve',
+      callback: (diecinueve)
+    },
+    {
+      command: 'veinte',
+      callback: (veinte)
+    },
+    {
+      command: 'veintiuno',
+      callback: (veintiuno)
+    },
+    {
+      command: 'veintidos',
+      callback: (veintidos)
+    },
+    {
+      command: 'veintitres',
+      callback: (veintitres)
+    },
+    {
+      command: 'veinticuatro',
+      callback: (veinticuatro)
+    },
+    {
+      command: 'veinticinco',
+      callback: (veinticinco)
+    },
+    {
+      command: 'veintiseis',
+      callback: (veintiseis)
+    },
+    {
+      command: 'veintisiete',
+      callback: (veintisiete)
+    },
+    {
+      command: 'veintiocho',
+      callback: (veintiocho)
+    },
+    {
+      command: 'veintinueve',
+      callback: (veintinueve)
+    },
+    {
+      command: 'treinta',
+      callback: (treinta)
+    },
+    {
+      command: 'treinta y uno',
+      callback: (treintaYUno)
+    },
+    {
+      command: 'treinta y dos',
+      callback: (treintaYDos)
+    },
+    {
+      command: 'treinta y tres',
+      callback: (treintaYTres)
+    },
+    {
+      command: 'treinta y cuatro',
+      callback: (treintaYCuatro)
+    },
+    {
+      command: 'treinta y cinco',
+      callback: (treintaYCinco)
+    },
+    {
+      command: 'treinta y seis',
+      callback: (treintaYSeis)
+    },
+    {
+      command: 'rojo',
+      callback: (rojo)
+    },
+    {
+      command: 'negro',
+      callback: (negro)
+    },
+
+  
     {
       command: 'Beijing',
       callback: (command, spokenPhrase, similarityRatio) => setMessage(`${command} and ${spokenPhrase} are ${similarityRatio * 100}% similar`),

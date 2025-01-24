@@ -1,12 +1,11 @@
 import Dashboard from "./Dashboard"
-import { Typography } from "@mui/material"
-import RouletteTable from './ruleta/ruleta'
+import Asesino from "./Asesino"
 function Home() {
     
     return <>
         <Dashboard/>
-        <RouletteTable/>
-        
+        <Asesino/>
+                
     </>
 
 

@@ -3,10 +3,8 @@ import React from 'react'
 //import './App.css';
 import VozEj1 from './components/VozEj1'
 import VozEj2 from './components/VozEj2'
-import Gestos from './components/Gestos'
-import AR from './components/AR'
 import Home from './components/Home'
-import ARAZAEL from './components/ARAZAEL';
+
 
 
 //import Pruebas from './components/Pruebas'
@@ -32,21 +30,6 @@ const router = createBrowserRouter([
         path: '/vozej2',
         element: <VozEj2 />
       },
-      {
-        path: '/gestos',
-        element: <Gestos />
-      }
-
-      ,
-      {
-        path: '/ar',
-        element: <AR />
-      },
-      {
-        path: '/araza',
-        element: <ARAZAEL />
-      }
-
       
     ]
   }
