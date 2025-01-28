@@ -1,5 +1,5 @@
 import Dashboard from "./Dashboard"
-import Asesino from "./Asesino"
+import Asesino from "./intro/Asesino"
 function Home() {
     
     return <>

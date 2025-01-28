@@ -7,32 +7,17 @@ function Dashboard() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar >
-                    <Grid container spacing={1} sx={{ width: '100%' }} >
-
-                        <Grid size={{xs:12, md:2, lg:2}}>        
+                    <Grid container  sx={{ width: '100%', alignItems: "center"}} >
+                        <Grid size={{xs:12, md:2, lg:4}} style={{ textAlign: "center" }}>        
                             <Link to={'/'} style={{textDecoration:'none', color:'white'}}>Inicio</Link>
                         </Grid>
 
-                        <Grid size={{xs:12, md:2, lg:2}}>        
-                            <Link to={'/gestos'} style={{textDecoration:'none', color:'white'}}>Gestos</Link>
-                        </Grid>
- 
-                        <Grid size={{xs:12, md:3, lg:3}}>        
-                            <Link to={'/vozej1'} style={{textDecoration:'none', color:'white'}}>Voz: ejemplo básico</Link>
-                        </Grid>
-
-                        <Grid size={{xs:12, md:3, lg:3}}>        
-                            <Link to={'/vozej2'} style={{textDecoration:'none', color:'white'}}>Voz: ejemplo comandos</Link>
-                        </Grid>
-
-                        <Grid size={{xs:12, md:1, lg:1}}>        
-                            <Link to={'/ar'} style={{textDecoration:'none', color:'white'}}>AR</Link>
-                        </Grid>
-                        <Grid size={{xs:12, md:1, lg:1}}>        
-                            <Link to={'/araza'} style={{textDecoration:'none', color:'white'}}>ARAZAEL</Link>
-                        </Grid>
-
-                        
+                        <Grid size={{xs:12, md:2, lg:4}} style={{ textAlign: "center" }}>        
+                            <Link to={'/historia'} style={{textDecoration:'none', color:'white'}}>Historia</Link>
+                        </Grid> 
+                        <Grid size={{xs:12, md:2, lg:4}} style={{ textAlign: "center" }}>        
+                            <Link to={'/pista'} style={{textDecoration:'none', color:'white'}}>Pista</Link>
+                        </Grid>   
                     </Grid>
                 </Toolbar >
             </Container>

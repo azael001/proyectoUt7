@@ -1,9 +1,9 @@
 import 'regenerator-runtime/runtime';
 import React from 'react'
-//import './App.css';
-import VozEj1 from './components/VozEj1'
-import VozEj2 from './components/VozEj2'
+import Historia from './components/Historia'
 import Home from './components/Home'
+import Pista from './components/Pista'
+import Explicacion from './components/explicacion';
 
 
 
@@ -23,13 +23,18 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/vozej1',
-        element: <VozEj1 />
+        path: '/historia',
+        element: <Historia/>
       },
       {
-        path: '/vozej2',
-        element: <VozEj2 />
+        path: '/pista',
+        element: <Pista/>
       },
+      {
+        path: '/explicacion',
+        element: <Explicacion/>
+      },
+
       
     ]
   }
