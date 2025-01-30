@@ -19,7 +19,7 @@ function HistoriaJuego() {
                                                         A medida que los investigadores profundizan, empiezan a descubrir secretos que ninguno de los tres está dispuesto a revelar. Pero, como en todo misterio, las pistas empiezan a señalar una única verdad.</Typography>
               </CardContent>
           </Card>
-          </Grid>   
+          </Grid>  
         </Grid>
  )
 }

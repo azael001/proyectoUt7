@@ -1,10 +1,12 @@
 import Dashboard from "./Dashboard"
 import HistoriaJuego from "./historia/HistoriaJuego"
+import VozVolver from "./voz/VozBack"
 function Historia() {
     
     return <>
         <Dashboard/>
-        <HistoriaJuego/>         
+        <HistoriaJuego/>    
+        <VozVolver/>     
     </>
 
 
