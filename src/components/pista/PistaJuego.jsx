@@ -6,23 +6,14 @@ import  Grid from "@mui/material/Grid2";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react'
-
+import { Button } from '@mui/material';
 function PistaJuego() {
-  useEffect(()=>{
-  const storedPrimeraPista = localStorage.getItem('primeraPista');
-  const storedSegundaPista = localStorage.getItem('segundaPista');
-  const storedTerceraPista = localStorage.getItem('terceraPista');
-
-  if (storedPrimeraPista === 'true') setPrimeraPista(true);
-  if (storedSegundaPista === 'true') setSegundaPista(true);
-  if (storedTerceraPista === 'true') setTerceraPista(true);
-
-  })
   const [primeraPista, setPrimeraPista] = useState(false)
   const [segundaPista, setSegundaPista] = useState(false)
   const [terceraPista, setTerceraPista] = useState(false)
-  const navigate = useNavigate();
+   const navigate = useNavigate();
     const [message, setMessage] = useState('')
+   
     const commands = [
       {
         command: 'Inicio',
@@ -35,27 +26,20 @@ function PistaJuego() {
   
       },
       {
-        command: 'desbloquear pista',
-        callback: () =>
-          {
-            if (primeraPista===false){
-          setPrimeraPista(true)
-         localStorage.setItem('primeraPista',true)} 
-          else{
-            if (segundaPista===false){
-              setSegundaPista(true)
-              localStorage.setItem('segundaPista',true)} 
-              else{
-                if (terceraPista===false){
-                  setTerceraPista(true)
-                  localStorage.setItem('terceraPista',true)} 
-                  else{alert("Ya tienes todas las pistas posibles")}}
-              }
-            },
-           
-          }
-          
-      
+        command: 'Primera pista',
+        callback:()=> { setPrimeraPista(true)}
+  
+      },
+      {
+        command: 'Segunda pista',
+        callback:()=> { setSegundaPista(true)}
+  
+      },
+      {
+        command: 'Tercera pista',
+        callback:()=> { setTerceraPista(true)}
+  
+      }    
     ]
      const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition({ commands })
       console.log(transcript)
@@ -105,12 +89,10 @@ function PistaJuego() {
           </CardContent>
       </Card>
       </Grid>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>   
-     
+      <Grid size={{xs:12, md:12 , xl:12}} sx={{mt:4, ml:4}}>
+      <Button variant="contained" sx={{backgroundColor:'#f06292',color:'black',fontWeight: 'bold', fontSize: '0,9rem'}} onClick={SpeechRecognition.startListening} size="large">Pulsa para hablar</Button>
+    </Grid> 
     </Grid>
     )
-
-
 }
 export default PistaJuego

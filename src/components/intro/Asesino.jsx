@@ -24,7 +24,7 @@ function Asesino() {
           alt="immgMaria"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h4" component="div"  sx={{ textAlign: 'center' }}>
             Maria
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
@@ -45,7 +45,7 @@ function Asesino() {
           alt="imgPepe"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h4" component="div"  sx={{ textAlign: 'center' }}>
             Pepe
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
@@ -66,7 +66,7 @@ function Asesino() {
           alt="img Juan"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h4" component="div"  sx={{ textAlign: 'center' }}>
             Juan
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
