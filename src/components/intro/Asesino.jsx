@@ -16,12 +16,11 @@ function Asesino() {
       </Grid>
     <Grid size={{ xs: 8, md: 6 ,xl:4}} sx={{mt:4,}} >
      <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
         <CardMedia
          sx={{
           height: 240, objectFit: "contain", }}
           component="img"
-          image="./public/maria.png"
+          image="./public/maria2.png"
           alt="immgMaria"
         />
         <CardContent>
@@ -32,18 +31,17 @@ function Asesino() {
           María es la misteriosa escritora que llegó al pueblo hace un año. Siempre con una libreta en mano, parece estar documentando algo importante. Sus relatos están llenos de oscuros crímenes que parecen extrañamente familiares. ¿Es su imaginación... o está ocultando un pasado peligroso?
           </Typography>
         </CardContent>
-      </CardActionArea>
     </Card>
     </Grid>
     <Grid size={{ xs: 8, md: 6,xl:4 }}sx={{mt:4}}>
      <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+
         <CardMedia
         sx={{
           height: 240, objectFit: "contain", }}
           component="img"
           height="140"
-          image="./public/pepe.png"
+          image="./public/pepe2.png"
           alt="imgPepe"
         />
         <CardContent>
@@ -54,18 +52,17 @@ function Asesino() {
           Pepe es el simpático panadero del pueblo. Siempre tiene una sonrisa para todos y es conocido por sus deliciosas magdalenas. Pero detrás de su amable fachada, parece saber más de lo que deja ver. ¿Es simplemente un buen oyente... o un maestro manipulador?
           </Typography>
         </CardContent>
-      </CardActionArea>
     </Card>
     </Grid>
     <Grid size={{ xs: 8, md: 6,xl:4 }}sx={{mt:4}}>
      <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      
         <CardMedia
         sx={{
           height: 240, objectFit: "contain", }}
           component="img"
           height="140"
-          image="./public/juan.png"
+          image="./public/juan2.png"
           alt="img Juan"
         />
         <CardContent>
@@ -76,9 +73,8 @@ function Asesino() {
           Juan es el carismático mecánico que arregla todo lo que se le pone por delante. Le encanta charlar con los vecinos y conoce cada rincón del pueblo. Pero hay rumores de que trabaja en algo más que coches... ¿Es solo un buen vecino o está ocultando un lado oscuro?
           </Typography>
         </CardContent>
-      </CardActionArea>
-    </Card>
-    </Grid>
+      </Card>
+     </Grid>
     </Grid>
     )
 
